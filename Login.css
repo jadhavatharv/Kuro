@@ -5,12 +5,15 @@
     font-family: sans-serif;
 }
 
+html {
+    background: url("./Kuro_Images/Kuro_Background.png")no-repeat center/cover;
+    background-attachment: fixed;
+}
+
 body {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
-    background: url(./Kuro_Images/Kuro_Background.png)no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -360,6 +363,7 @@ p a:hover {
     color: white;
 
 }
+
 
 
 
