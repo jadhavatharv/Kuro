@@ -7,7 +7,7 @@
 
 body {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh-120px);
     background: url(./Kuro_Images/Kuro_Background.png)no-repeat;
     background-position: center;
     background-size: cover;
@@ -361,5 +361,6 @@ p a:hover {
     color: white;
 
 }
+
 
 
