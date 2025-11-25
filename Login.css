@@ -7,14 +7,13 @@
 
 body {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background: url(./Kuro_Images/Kuro_Background.png)no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 100px;
 }
 
 header {
@@ -361,6 +360,7 @@ p a:hover {
     color: white;
 
 }
+
 
 
 
