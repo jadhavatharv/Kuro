@@ -163,6 +163,28 @@ header {
     }
 }
 
+@media screen and (max-width: 350px) {
+    .container {
+        width: 92%;
+        max-width: 300px;
+        padding: 15px;
+    }
+
+    .form-group {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .form-group input {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+
+    #btn {
+        height: 45px;
+        font-size: 1.1em;
+    }
+}
 
 .navigation a {
     position: relative;
@@ -333,3 +355,4 @@ p a:hover {
     color: white;
 
 }
+
