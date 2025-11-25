@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    background: url(./Kuro_Images/Kuro_Background.png)no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    color: white;
+    user-select: none;
+}
+
+.logo {
+    position: relative;
+    padding-left: 111px; 
+    display: flex;
+    align-items: center;
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 110px;       
+    height: 110px;      
+    background: url("/Kuro_Images/Kuro_Logo.png") no-repeat center/cover;
+}
+
+h2 {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        background: rgba(0,0,0,0.8);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex; 
+        
+    }
+
+    header {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 1.8em;
+        padding-left: 61px;
+    }
+
+    .logo::before {
+        width: 60px;
+        height: 60px;
+    }
+
+    .menu-toggle {
+        right: 15px;
+        display: flex;
+    }
+
+    .menu-toggle span {
+        width: 22px;
+        height: 3px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .contact-boxes {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contact-box {
+        width: 90%;
+        height: auto;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.nav-links {
+    display: flex; 
+    list-style: none;
+    gap: 40px;
+}
+
+.menu-toggle {
+    display: none; 
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+    border-radius: 2px;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation .btnlogin {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.3em;
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.navigation .btnlogin:hover {
+    background: white;
+    color: black;
+}
+
+.contact {
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    margin-top: 10px; /* space below header */
+    margin-bottom: 50px; /* space above boxes */
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.contact-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: nowrap;
+    margin-bottom: 90px;
+}
+
+/* Individual box */
+.contact-box {
+    width: 300px;
+    height: 250px;
+    padding: 25px;
+    border-radius: 15px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    color: white;
+    transition: 0.5s ease;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Icon + Title */
+.contact-box i {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Text */
+.contact-box p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Hover effect */
+.contact-box:hover {
+    transform: translateY(-5px);
+}
+
+p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+p a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* MOBILE: Stack boxes vertically */
+@media screen and (max-width: 768px) {
+    .contact-boxes {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-box {
+        width: 90%;
+    }
+}
+
+.site-footer {
+    width: 100%;
+    background: transparent;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+}
+.site-footer {
+    margin: 0;
+} 
