@@ -226,7 +226,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 100px;
+    padding: 0;
 }
 
 .nav-links {
@@ -387,6 +387,7 @@ p a:hover {
 .site-footer {
     margin: 0;
 } 
+
 
 
 
