@@ -52,7 +52,7 @@ header {
     left: 0;
     width: 110px;       
     height: 110px;      
-    background: url("/Kuro_Images/Kuro_Logo.png") no-repeat center/cover;
+    background: url("./Kuro_Images/Kuro_Logo.png") no-repeat center/cover;
 }
 
 .navigation {
@@ -351,6 +351,7 @@ p a:hover {
 .site-footer {
     margin: 0;
 } 
+
 
 
 
