@@ -6,7 +6,7 @@
 }
 
 html {
-    background: url(./Kuro_Images/Kuro_Background.png)no-repeat center/cover;
+    background: url("./Kuro_Images/Kuro_Background.png")no-repeat center/cover;
     background-attachment: fixed;
 }
 
@@ -52,7 +52,7 @@ header {
     left: 0;
     width: 110px;       
     height: 110px;      
-    background: url("/Kuro_Images/Kuro_Logo.png") no-repeat center/cover;
+    background: url("./Kuro_Images/Kuro_Logo.png") no-repeat center/cover;
 }
 
 h2 {
@@ -134,6 +134,27 @@ h2 {
     h2 {
         font-size: 1.5em;
     }
+
+    header {
+        padding: 15px 20px;
+        justify-content: space-between;
+    }
+
+    .contact {
+    margin-top: 70px;
+    }
+
+    .contact-boxes {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-box {
+        width: 90%;
+        height: auto;
+        min-height: 160px;
+        padding: 15px;
+    }
 }
 
 @media screen and (max-width: 390px) {
@@ -147,6 +168,7 @@ h2 {
 
     .menu-toggle {
         display: flex;
+        right: 13px;
     }
 }
 
@@ -164,6 +186,28 @@ h2 {
 
     .menu-toggle {
         display: flex;
+        right: 10px;
+    }
+
+    header {
+        padding: 15px 20px;
+        justify-content: space-between;
+    }
+
+    .contact {
+    margin-top: 30px;
+    }
+
+    .contact-boxes {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-box {
+        width: 90%;
+        height: auto;
+        min-height: 140px;
+        padding: 11px;
     }
 }
 
@@ -334,4 +378,5 @@ p a:hover {
 .site-footer {
     margin: 0;
 } 
+
 
