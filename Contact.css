@@ -25,12 +25,12 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
-    background: transparent;
+    padding: 15px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 99;
+    z-index: 999;
+    background: transparent;
 }
 
 .logo {
@@ -52,26 +52,64 @@ header {
     left: 0;
     width: 110px;       
     height: 110px;      
-    background: url("./Kuro_Images/Kuro_Logo.png") no-repeat center/cover;
+    background: url("/Kuro_Images/Kuro_Logo.png") no-repeat center/cover;
 }
 
-h2 {
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a {
+    font-size: 1.3em;
     color: white;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    font-size: 2em;
+    text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
+.btnlogin {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.3em;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.menu-toggle span {
+    width: 28px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+}
+
+@media(max-width: 768px) {
+
     .nav-links {
-        display: none; 
-        flex-direction: column;
-        width: 100%;
-        background: rgba(0,0,0,0.8);
+        display: none;
         position: absolute;
-        top: 70px;
+        top: 100px;
         left: 0;
+        width: 100%;
+        flex-direction: column;
         text-align: center;
+        background: rgba(0,0,0,0.7);
+        padding: 20px 0;
     }
 
     .nav-links.active {
@@ -80,35 +118,16 @@ h2 {
 
     .menu-toggle {
         display: flex;
-        right: 20px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 200;
     }
 
-    header {
-        padding: 10px 20px;
-        justify-content: space-between;
-        height: auto;
-        align-items: center;
-    }
+}
 
-    .contact {
-    margin-top: 70px;
-    }
 
-    .contact-boxes {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .contact-box {
-        width: 90%;
-        height: auto;
-        min-height: 160px;
-        padding: 15px;
-    }
+h2 {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 2em;
 }
 
 @media screen and (max-width: 450px) {
@@ -175,6 +194,10 @@ h2 {
         display: flex;
         right: 13px;
     }
+
+    .container {
+        margin-top: 145%;
+    }
 }
 
 @media screen and (max-width: 350px) {
@@ -194,63 +217,9 @@ h2 {
         right: 10px;
     }
 
-    header {
-        padding: 15px 20px;
-        justify-content: space-between;
+    .container {
+        margin-top: 145%;
     }
-
-    .contact {
-    margin-top: 30px;
-    }
-
-    .contact-boxes {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .contact-box {
-        width: 90%;
-        height: auto;
-        min-height: 140px;
-        padding: 11px;
-    }
-
-    .nav-links {
-        display: none;
-    }
-}
-
-
-
-.navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-}
-
-.nav-links {
-    display: flex; 
-    list-style: none;
-    gap: 40px;
-}
-
-.menu-toggle {
-    display: none; 
-    flex-direction: column;
-    cursor: pointer;
-    position: absolute;
-    right: 100px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.menu-toggle span {
-    height: 3px;
-    width: 25px;
-    background: white;
-    margin: 4px 0;
-    border-radius: 2px;
 }
 
 .navigation a {
@@ -306,7 +275,6 @@ h2 {
     margin-bottom: 90px;
 }
 
-/* Individual box */
 .contact-box {
     width: 300px;
     height: 250px;
@@ -326,7 +294,6 @@ h2 {
     gap: 10px;
 }
 
-/* Icon + Title */
 .contact-box i {
     font-size: 2.2em;
     margin-bottom: 10px;
@@ -338,13 +305,11 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Text */
 .contact-box p {
     font-size: 1em;
     line-height: 1.5;
 }
 
-/* Hover effect */
 .contact-box:hover {
     transform: translateY(-5px);
 }
@@ -361,7 +326,6 @@ p a:hover {
     text-decoration: underline;
 }
 
-/* MOBILE: Stack boxes vertically */
 @media screen and (max-width: 768px) {
     .contact-boxes {
         flex-direction: column;
@@ -387,6 +351,7 @@ p a:hover {
 .site-footer {
     margin: 0;
 } 
+
 
 
 
