@@ -25,7 +25,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 15px 40px;
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,14 +88,18 @@ header {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    margin-left: 20px;
+    position: absolute;
+    right: 20px;
+    top: 50%
+    transform: translateY(-50%);
 }
 
 .menu-toggle span {
-    width: 28px;
+    width: 25px;
     height: 3px;
     background: white;
     margin: 5px 0;
+    border-radius: 2px;
 }
 
 @media(max-width: 768px) {
@@ -233,7 +237,8 @@ h2 {
 }
 
 .container {
-    width: 100%;
+    width: auto;
+    min-width: 250px;
     text-align: center;
 }
 
@@ -323,4 +328,5 @@ p a:hover {
 .site-footer {
     margin: 0;
 } 
+
 
