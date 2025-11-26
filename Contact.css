@@ -25,7 +25,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 40px;
+    padding: 24.5px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -329,6 +329,7 @@ p a:hover {
 .site-footer {
     margin: 0;
 } 
+
 
 
 
