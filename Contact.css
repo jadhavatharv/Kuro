@@ -120,6 +120,9 @@ header {
         display: flex;
     }
 
+    .container {
+        margin-top: 70%;
+    }
 }
 
 h2 {
@@ -145,7 +148,7 @@ h2 {
     }
 
     .container {
-        margin-top: 145%;
+        margin-top: 140%;
     }
 
     h2 {
@@ -167,7 +170,7 @@ h2 {
     }
 
     .container {
-        margin-top: 145%;
+        margin-top: 140%;
     }
 }
 
@@ -188,7 +191,7 @@ h2 {
     }
 
     .container {
-        margin-top: 145%;
+        margin-top: 170%;
     }
 }
 
@@ -320,3 +323,4 @@ p a:hover {
 .site-footer {
     margin: 0;
 } 
+
