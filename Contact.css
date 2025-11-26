@@ -81,12 +81,17 @@ h2 {
     .menu-toggle {
         display: flex;
         right: 20px;
-        
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 200;
     }
 
     header {
-        padding: 15px 20px;
+        padding: 10px 20px;
         justify-content: space-between;
+        height: auto;
+        align-items: center;
     }
 
     .contact {
@@ -113,12 +118,12 @@ h2 {
 
     .logo {
         font-size: 1.8em;
-        padding-left: 61px;
+        padding-left: 50px;
     }
 
     .logo::before {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
 
     .menu-toggle {
@@ -208,6 +213,10 @@ h2 {
         height: auto;
         min-height: 140px;
         padding: 11px;
+    }
+
+    .nav-links {
+        display: none;
     }
 }
 
@@ -378,5 +387,6 @@ p a:hover {
 .site-footer {
     margin: 0;
 } 
+
 
 
