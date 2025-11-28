@@ -91,7 +91,7 @@ header {
     margin-left: 20px; 
     position: absolute;
     right: 20px;
-    top: 50%;
+    top: 50%
     transform: transateY(-50%);
 }
 
@@ -390,3 +390,4 @@ section {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
