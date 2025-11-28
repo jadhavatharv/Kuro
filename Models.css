@@ -353,7 +353,7 @@ p {
     font-weight:bold;
 }
 
-.white-btn {
+.red-btn {
     background: white; 
     color:#000;
 }
@@ -364,9 +364,11 @@ p {
     border:1px solid #333;
 }
 
-.white-btn:hover {
-    color: red;
+.red-btn:hover {
+    background: red;
+    color: white;
 }
+
 
 
 
