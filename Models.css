@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    background: url(./Kuro_Images/Kuro_Background.png)no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    background: transparent;
+}
+
+.logo {
+    font-size: 2em;
+    color: white;
+    user-select: none;
+}
+
+.logo {
+    position: relative;
+    padding-left: 111px; 
+    display: flex;
+    align-items: center;
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 110px;       
+    height: 110px;      
+    background: url("./Kuro_Images/Kuro_Logo.png") no-repeat center/cover;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a {
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+}
+
+.btnlogin {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.3em;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.menu-toggle span {
+    width: 28px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+}
+
+@media(max-width: 768px) {
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 70%;
+        flex-direction: column;
+        text-align: center;
+        background: rgba(0,0,0,0.7);
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .container {
+        margin-top: 170%;
+    }
+
+     .model-boxes {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .model-box {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+h2 {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 1.8em;
+        padding-left: 61px;
+    }
+
+    .logo::before {
+        width: 60px;
+        height: 60px;
+    }
+
+    .container {
+        margin-top: 330%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .container {
+        margin-top: 375%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .model-boxes {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .model-box {
+        width: 90%;
+        height: auto;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .container {
+        margin-top: 440%;
+    }
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation .btnlogin {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.3em;
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.navigation .btnlogin:hover {
+    background: white;
+    color: black;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.heading2 {
+    margin-top: 15%;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.heading4 {
+    color: #cec5c5;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.model-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.model-box {
+    width: 350px;
+    height: auto;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding-bottom: 35px;
+    position: relative;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.car-img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: cover;
+}
+
+.title-row {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 3px 10px 0 10px;
+}
+
+.name {
+    margin-top: 7px;
+    margin-bottom: 3px;
+    text-align: left;
+}
+
+.price {
+    font-size: 25px;
+    color: #bdb4b4;
+    text-align: right;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.spec-grid {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    margin:15px;
+}
+
+.spec-grid div {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding:10px;
+    border-radius:6px;
+    font-size:14px;
+    color: white;
+}
+
+.tags span {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding:6px 10px;
+    margin:3px;
+    border-radius:8px;
+    font-size:12px;
+    color: white;
+}
+
+.tags {
+    margin-bottom:20px;
+ }
+
+p {
+    color: #d2caca;
+    text-align: left;
+    margin-left: 10px;
+ }
+ 
+.btn-row button {
+    width:42%;
+    padding:10px;
+    border-radius:6px;
+    border:none;
+    cursor:pointer;
+    margin:5px;
+    font-weight:bold;
+}
+
+.white-btn {
+    background:#fff; 
+    color:#000;
+}
+
+.dark-btn {
+    background:#1a1a1a;
+    color:#fff;
+    border:1px solid #333;
+}
+
