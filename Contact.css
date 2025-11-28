@@ -6,7 +6,7 @@
 }
 
 html {
-    background: url(./Kuro_Images/Kuro_Background.png)no-repeat center/cover;
+    background: url("./Kuro_Images/Kuro_Background.png")no-repeat center/cover;
     background-attachment: fixed;
 }
 
@@ -329,6 +329,7 @@ p a:hover {
 .site-footer {
     margin: 0;
 } 
+
 
 
 
