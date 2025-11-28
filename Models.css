@@ -6,7 +6,7 @@
 }
 
 html {
-    background: url(./Kuro_Images/Kuro_Background.png)no-repeat center/cover;
+    background: url("./Kuro_Images/Kuro_Background.png")no-repeat center/cover;
     background-attachment: fixed;
 }
 
@@ -357,4 +357,5 @@ p {
     color:#fff;
     border:1px solid #333;
 }
+
 
