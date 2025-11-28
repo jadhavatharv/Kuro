@@ -91,7 +91,7 @@ header {
     margin-left: 20px;
     position: absolute;
     right: 20px;
-    top: 50%;
+    top: 50%
     transform: translateY(-50%);
     margin-bottom: 30px;
 }
@@ -362,6 +362,10 @@ p {
     background:#1a1a1a;
     color:#fff;
     border:1px solid #333;
+}
+
+.white-btn:hover {
+    color: red;
 }
 
 
