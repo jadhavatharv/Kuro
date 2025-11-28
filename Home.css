@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    background: url(./Kuro_Images/Kuro_Background.png)no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    background: transparent;
+}
+
+.logo {
+    font-size: 2em;
+    color: white;
+    user-select: none;
+}
+
+.logo {
+    position: relative;
+    padding-left: 111px; 
+    display: flex;
+    align-items: center;
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 110px;       
+    height: 110px;      
+    background: url("./Kuro_Images/Kuro_Logo.png") no-repeat center/cover;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a {
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+}
+
+.btnlogin {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.3em;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.menu-toggle span {
+    width: 28px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+}
+
+@media(max-width: 768px) {
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 70%;
+        flex-direction: column;
+        text-align: center;
+        background: rgba(0,0,0,0.7);
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .container {
+        margin-top: 100%;
+    }
+
+    .info {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .text-block {
+        text-align: center;
+    }
+
+    .spec-grid {
+        justify-content: center;
+        margin: 15px auto;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+h2 {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 1.8em;
+        padding-left: 61px;
+    }
+
+    .logo::before {
+        width: 60px;
+        height: 60px;
+    }
+
+    .container {
+        margin-top: 145%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .info {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .spec-grid {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin: 15px auto;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .container {
+        margin-top: 145%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .contact-boxes {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contact-box {
+        width: 90%;
+        height: auto;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .container {
+        margin-top: 145%;
+    }
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation .btnlogin {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.3em;
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.navigation .btnlogin:hover {
+    background: white;
+    color: black;
+}
+
+section {
+    max-width: 95%;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: fill;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.03);
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.heading2 {
+    margin-top: 15%;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.heading3 {
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.heading4 {
+    color: #cec5c5;
+    margin-bottom: 45px;
+    font-size: 15px;
+}
+
+ .info {
+    text-align: left;
+    margin-left: 45px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin: auto;
+ }
+
+ .text-block {
+    flex: 1;
+ }
+
+ .heading1 {
+    color: #cec5c5;
+ }
+
+ .heading5 {
+    color: white;
+    margin-bottom: -5px;
+ }
+
+ .heading6 {
+    margin-top: -15px;
+    color: #cec5c5;
+    font-size: 18px;
+ }
+
+ .spec-grid {
+    display:grid;
+    grid-template-columns:repeat(2, auto);
+    gap:15px;
+    margin:15px;
+    flex: 1;
+    justify-content: end;
+}
+
+.spec-grid div {
+    background: transparent;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    padding:10px;
+    border-radius:6px;
+    font-size:14px;
+    color: #cec5c5;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    width: 300px;
+    height: 70px;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.spec-grid b {
+    color: white;
+    font-size: 20px;
+    display: block;
+}
+
+.spec-grid i {
+    font-size: 20px;
+}
+
+.spec-grid .text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
