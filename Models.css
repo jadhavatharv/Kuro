@@ -89,13 +89,19 @@ header {
     flex-direction: column;
     cursor: pointer;
     margin-left: 20px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-bottom: 30px;
 }
 
 .menu-toggle span {
     width: 28px;
-    height: 3px;
+    height: 2.5px;
     background: white;
-    margin: 5px 0;
+    margin: 2.5px 0;
+    border-radius: 3px;
 }
 
 @media(max-width: 768px) {
@@ -194,7 +200,7 @@ h2 {
     }
 
     .model-box {
-        width: 90%;
+        width: auto;
         height: auto;
     }
 
@@ -357,6 +363,7 @@ p {
     color:#fff;
     border:1px solid #333;
 }
+
 
 
 
