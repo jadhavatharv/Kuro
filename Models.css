@@ -198,9 +198,6 @@ h2 {
         height: auto;
     }
 
-    .model-box:hover {
-    transform: translateY(-5px);
-
     .menu-toggle {
         display: flex;
     }
@@ -360,6 +357,7 @@ p {
     color:#fff;
     border:1px solid #333;
 }
+
 
 
 
